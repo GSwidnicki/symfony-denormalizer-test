@@ -1,0 +1,9 @@
+app.test:
+    path: /{id}
+    defaults: { _controller: 'AppBundle:Test:test' }
+    requirements:
+          id: \d+
+
+app.insert_data:
+    path: /insert
+    defaults: { _controller: 'AppBundle:InsertData:insertData' }
